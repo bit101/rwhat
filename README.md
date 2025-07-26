@@ -6,9 +6,9 @@
 - You have a script you wrote weeks, months, years ago that has an rsync command in it and you don't remember what it does.
 
 ## Problem / Solutions
-rsync has several dozen commands and it's not always obvious what they do. Some solutions:
+rsync has well over a hundred parameters and most of them can be expressed with two different versions. It's not always obvious what all of these do. Some solutions:
 
-- Search through the help or man file for what each argument does. Ouch.
+- Search through the help or man file for what each parameter does. Ouch.
 - Use [https://explainshell.com/](https://explainshell.com/) which is actually very good, but requires you to switch to a browser. It's also very verbose - may require scrolling through multiple screens of deep explanations.
 - Replace `rsync` with `rwhat` in your command.
 
@@ -36,11 +36,11 @@ Result:
 --delete: delete extraneous files from dest dirs
 ```
 
-Note that if other arguments are referenced, those are also explained, indented.
+Note that if other parameters are referenced, those are also explained, indented.
 
 ## Known issues
 
-Single character options with arguments must have a space or `=` character between the option and argument.
+Single character parameters with arguments must have a space or `=` character between the parameter and argument.
 
 ```
 # legal in `rsync`, but won't work with `rwhat` right now:
@@ -59,7 +59,7 @@ rwhat --block-size=50 src dest
 - Created based on rsync 3.4.1 (released Jan 15, 2025) - Linux version.
 - This isn't necessarily a good tool for discovering *how* to write an rsync command that does what you want, just for explaining what an existing one does.
 - `rwhat` will not run `rsync` or any other external program. It merely parses the arguments you pass it and shows the help description for each one.
-- As the [license](https://github.com/bit101/rwhat/blob/main/LICENSE) says, no warranty of any kind. This is just a tool to help you understand the rsync arguments. Please make sure you FULLY understand what you are doing before running any command on real data. 
+- As the [license](https://github.com/bit101/rwhat/blob/main/LICENSE) says, no warranty of any kind. This is just a tool to help you understand the rsync parameters. Please make sure you FULLY understand what you are doing before running any command on real data. 
 
 ## Install
 - If you have Go installed, you can build with `go build` and put the `rwhat` executable in your path.
