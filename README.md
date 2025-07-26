@@ -42,6 +42,7 @@ Note that if other arguments are referenced, those are also explained, indented.
 
 - Data was obtained through the man file and processed. It is not dynamic and will need to be updated if anything changes.
 - Created based on rsync 3.4.1 (released Jan 15, 2025) - Linux version.
+- This isn't necessarily a good tool for discovering *how* to write an rsync command that does what you want, just for explaining what an existing one does.
 
 ## Install
 - If you have Go installed, you can build with `go build` and put the `rwhat` executable in your path.
