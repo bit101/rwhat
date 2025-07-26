@@ -249,9 +249,9 @@ func makeAliases() {
 }
 
 func makenestedArgList() {
-	nestedArgList["--acls"] = []string{"-p"}
+	nestedArgList["--acls"] = []string{"--perms"}
 	nestedArgList["--append-verify"] = []string{"--append"}
-	nestedArgList["--archive"] = []string{"-H", "-A", "-X"}
+	nestedArgList["--archive"] = []string{"-A", "-X", "-U", "-N", "-H"}
 	nestedArgList["--backup"] = []string{"--suffix", "--backup-dir"}
 	nestedArgList["--del"] = []string{"--delete-during"}
 	nestedArgList["--no-implied-dirs"] = []string{"--relative"}
@@ -259,6 +259,7 @@ func makenestedArgList() {
 	nestedArgList["--omit-dir-times"] = []string{"--times"}
 	nestedArgList["--omit-link-times"] = []string{"--times"}
 	nestedArgList["--only-write-batch"] = []string{"--write-batch"}
+	nestedArgList["--write-devices"] = []string{"--inplace"}
 	nestedArgList["-D"] = []string{"--devices", "--specials"}
 	nestedArgList["-F"] = []string{"--filter"}
 	nestedArgList["-P"] = []string{"--progress", "--partial"}
