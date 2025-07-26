@@ -9,7 +9,7 @@
 rsync has several dozen commands and it's not always obvious what they do. Some solutions:
 
 - Search through the help or man file for what each argument does. Ouch.
-- Use [https://explainshell.com/](https://explainshell.com/) which is actually very good, but requires you to switch to a browser. It's also very verbose.
+- Use [https://explainshell.com/](https://explainshell.com/) which is actually very good, but requires you to switch to a browser. It's also very verbose - may require scrolling through multiple screens of deep explanations.
 - Replace `rsync` with `rwhat` in your command.
 
 ## Example
