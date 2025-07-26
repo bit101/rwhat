@@ -45,7 +45,7 @@ Note that if other arguments are referenced, those are also explained, indented.
 
 ## Install
 - If you have Go installed, you can build with `go build` and put the `rwhat` executable in your path.
-- Download an executable from the releases page and put that in your path.
+- Download an executable from the [releases](https://github.com/bit101/rwhat/releases) page and put that in your path.
 
 
 
