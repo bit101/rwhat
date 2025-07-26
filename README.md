@@ -6,7 +6,11 @@
 - You have a script you wrote weeks, months, years ago that has an rsync command in it and you don't remember what it does.
 
 ## Problem / Solutions
-rsync has well over a hundred parameters and most of them can be expressed with two different versions. It's not always obvious what all of these do. Some solutions:
+rsync has well over a hundred parameters and most of them can be expressed with two different versions. It's not always obvious what all of these do.
+
+For example, someone you see `rsync -zavghn src dest`. What the heck is `-zavghn`??? If you use rsync all the time, you might know all these, but most people won't.
+
+Some solutions:
 
 - Search through the help or man file for what each parameter does. Ouch.
 - Use [https://explainshell.com/](https://explainshell.com/) which is actually very good, but requires you to switch to a browser. It's also very verbose - may require scrolling through multiple screens of deep explanations.
