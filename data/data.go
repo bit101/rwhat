@@ -26,7 +26,7 @@ func GetDesc(arg string) string {
 	if strings.HasPrefix(arg, "--no-") {
 		return "turn off an implied OPTION (e.g. --no-D)"
 	}
-	return "** invalid argument **"
+	return "\033[31m** invalid argument **\033[0m"
 }
 
 // AddNestedArgs adds indented arg descriptions for any descriptions that refer to other args.
