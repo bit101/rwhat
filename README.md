@@ -43,6 +43,7 @@ Note that if other arguments are referenced, those are also explained, indented.
 - Data was obtained through the man file and processed. It is not dynamic and will need to be updated if anything changes.
 - Created based on rsync 3.4.1 (released Jan 15, 2025) - Linux version.
 - This isn't necessarily a good tool for discovering *how* to write an rsync command that does what you want, just for explaining what an existing one does.
+- `rwhat` will not run `rsync` or any other external program. It merely parses the arguments you pass it and shows the help description for each one.
 - As the [license](https://github.com/bit101/rwhat/blob/main/LICENSE) says, no warranty of any kind. This is just a tool to help you understand the rsync arguments. Please make sure you FULLY understand what you are doing before running any command on real data. 
 
 ## Install
