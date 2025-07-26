@@ -19,10 +19,6 @@ func init() {
 
 // GetDesc gets the description of a given argument.
 func GetDesc(arg string) string {
-	if strings.Contains(arg, "=") {
-		arg = strings.Split(arg, "=")[0]
-	}
-
 	desc, ok := argDescriptions[arg]
 	if ok {
 		return desc
@@ -42,7 +38,7 @@ func AddNestedArgs(arg string, indent int) {
 	args, ok := nestedArgList[arg]
 	if ok {
 		for _, nestedArg := range args {
-			fmt.Printf("%s%s: %s\n", prefix, nestedArg, GetDesc(nestedArg))
+			fmt.Printf("\033[32m%s%s: %s\033[0m\n", prefix, nestedArg, GetDesc(nestedArg))
 		}
 	}
 }

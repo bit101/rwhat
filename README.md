@@ -38,6 +38,21 @@ Result:
 
 Note that if other arguments are referenced, those are also explained, indented.
 
+## Known issues
+
+Single character options with arguments must have a space or `=` character between the option and argument.
+
+```
+# legal in `rsync`, but won't work with `rwhat` right now:
+rwhat -B50 src dest
+
+# these all work in rsync and rwhat:
+rwhat -B 50 src dest
+rwhat -B=50 src dest
+rwhat --block-size 50 src dest
+rwhat --block-size=50 src dest
+```
+
 ## Caveats
 
 - Data was obtained through the man file and processed. It is not dynamic and will need to be updated if anything changes.
