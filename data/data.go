@@ -1,7 +1,10 @@
 // Package data contains lists of option descriptions
 package data
 
-import "fmt"
+import (
+	"fmt"
+	"strings"
+)
 
 var (
 	argDescriptions = map[string]string{}
@@ -19,6 +22,9 @@ func GetDesc(arg string) string {
 	desc, ok := argDescriptions[arg]
 	if ok {
 		return desc
+	}
+	if strings.HasPrefix(arg, "--no-") {
+		return "turn off an implied OPTION (e.g. --no-D)"
 	}
 	return "** invalid argument **"
 }
@@ -126,7 +132,6 @@ func makeArgDescriptions() {
 	argDescriptions["--mkpath"] = "create destination's missing path components"
 	argDescriptions["--modify-window"] = "set the accuracy for mod-time comparisons"
 	argDescriptions["--munge-links"] = "munge symlinks to make them safe & unusable"
-	argDescriptions["--no-OPTION"] = "turn off an implied OPTION (e.g. --no-D)"
 	argDescriptions["--no-detach"] = "do not detach from the parent"
 	argDescriptions["--no-implied-dirs"] = "don't send implied dirs with --relative"
 	argDescriptions["--no-motd"] = "suppress daemon-mode MOTD"
