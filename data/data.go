@@ -19,6 +19,10 @@ func init() {
 
 // GetDesc gets the description of a given argument.
 func GetDesc(arg string) string {
+	if strings.Contains(arg, "=") {
+		arg = strings.Split(arg, "=")[0]
+	}
+
 	desc, ok := argDescriptions[arg]
 	if ok {
 		return desc
