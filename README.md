@@ -1,3 +1,8 @@
+# Archived
+This repo has been moved to https://codeberg.org/bit101/rwhat
+
+# rwhat
+
 `rwhat` is a command line utility to explain what a given rsync command will do.
 
 ## Use cases:
